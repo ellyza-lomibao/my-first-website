@@ -1,0 +1,270 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <style>
+  header { 
+    background-color: lightsalmon;
+    padding: 20px;
+    text-align: center;
+  }
+  .left { 
+    float: left;
+    width: 50%;
+    background-color: aliceblue;
+    padding: 20px;
+  }
+  .right {
+    float: right;
+    width: 50px;
+    background-color: aquamarine;
+    padding: 20px;
+  }
+   img {
+    max-width: 100%;
+    height: auto;
+   }
+   ul { 
+    list-style-type: none;
+    background: #eeeadd;
+    padding: 0;
+    margin: 0;
+   }
+   li {
+    display: inline;
+    margin-right: 20px;
+   }
+   a { 
+    color: white;
+    text-decoration: none;
+   }
+   .btn {
+    background:goldenrod;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+   }
+   .btn : :hover {
+    background: darkgreen;
+   }
+   form {
+    width: 300px;
+    margin: 20px auto;
+   }
+   input, textarea { 
+     width: 100%;
+     margin-bottom: 10px;
+     padding: 8px;
+   }
+   .card {
+    border: 1px solid #eeeadd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 250px;
+    margin: 10px auto;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+   }
+   .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50$, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid black;
+   }
+   .modal .show {
+    display: block;
+   }
+   .row {
+    display: flex;
+   }
+   .col {
+    flex: 1;
+    margin: 5px;
+    padding: 20px;
+    background: lightblue;
+   }
+   .dropdown {
+    position: relative;
+    display: inline-block;
+   }
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    border: 1px solid #ccc;
+    min-width: 120px;
+   }
+   .dropdown :hover .dropdown-content {
+    display: block;
+   }
+   .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   }
+   header {
+    position: sticky;
+    top: 0;
+    background: lightblue;
+    padding 15px;
+   }
+   footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: gray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+   }
+   .col {
+    float: left;
+    width: 33.3%;
+    padding: 20px;
+    box-sizing: border-box;
+   }
+   .gallery {
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .gallery img {
+    width: 30%;
+    margin: 1%;
+   }
+   .card {
+    width: 250px;
+    border: 1px solid #eeeadd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+   }
+   .card img {
+    width: 100px;
+    border-radius: 50%;
+   }
+   .banner {
+    background: lavenderblush;
+    padding: 50px;
+    text-align: center;
+   }
+   nav {
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+    padding: 10px;
+   }
+   nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+   }
+   .pricing {
+    display: flex;
+    justify-content: center;
+   }
+   .plan {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+   }
+   .sidebar {
+    width: 200px;
+    float: left;
+    background: lightgray;
+    height: 100vh;
+    padding: 20px;
+   }
+   .content {
+    margin-left: 220px;
+    padding: 20px;
+   }
+ </stlyle>
+</head>
+<body>
+  <header>
+     <h1> My Website </h1>
+  </header> 
+    <div class="left" > Left Content</div> 
+    <div class="right" > Right Content</div>
+    <img src="https://i.imgflip.com/3on8mj.jpg?a487752/600x300" alt="smug">
+   <ul>
+        <li>< a href=" # ">Home</a></li>
+        <li>< a href=" # ">About</a></li>
+        <li>< a href=" # ">Contact</a></li>
+    </u>
+    <button class="btn"> Click Me </button>
+    <form>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Submit</button>
+    </form>
+    <div class="card">
+        <h3> Nutella </h3>
+        <p> Nuttella is my favorite choco spread.</p>
+    </div>
+    <button 
+    onclick="document.getElementById('myModal').classList.add('show')">Open Modal </button>
+     <div. id="myModal" class="modal">
+       <p> This is a modal! </p>
+    </div>
+    <div class="row">
+        <div class="col">Column 1 </div> 
+        <div class="col">Column 2 </div>
+        <div class="col">Column 3 </div>
+    </div>
+    <div class "dropdown">
+        <button><Menu></button>
+        <div.class="dropdown-content">
+        <p>Option 1 </p>
+        <p> Option 2</p>
+        </div>
+    </div>
+    <div class="center">
+        <h1> This is Centered Text <h1>
+    </div>
+    <header> Sticky Header</header> 
+    <p> Scroll down... </p>
+    <div style ="height: 1500px"> </div>
+    <p>Page content here... </p>
+    <footer> Fixed Footer </footer>
+    <div class-"col"> Column 1 </div>
+    <div class-"col"> Column 2 </div>
+    <div class-"col"> Column 3 </div>
+
+    <div class="gallery">
+        <img src="https://i.pinimg.com/236x/25/df/2d/25df2dc2a0df6796434c3cb40b499ef6.jpg">
+        <img src="https://i.pinimg.com/736x/94/2e/cc/942ecc1954a364066aa677ee03cf66fb.jpg">
+        <img src="https://media.tenor.com/5jtjdvna958AAAAM/stressed-screamibg.gif">
+    </div>
+    <div class="card">
+        <img src="https://preview.redd.it/akuwerqkwwl71.jpg?width=640&crop=smart&auto=webp&s=f58bc1f1b2023badc0937116811cf53a0096ee0a">
+        <h3> me right now</h3>
+        <p> This is fine </p>
+    </div>
+     <div class="banner">
+         <h1> Welcome to my Website!</h1>
+         <p> This is a hero banner :/p>
+    </div>
+    <nav>
+        <div> Logo </div> 
+        <div>
+            <a href="# ">Home</a>
+            <a href= "# ">About</a>
+        </div>
+    </nav>
+    <div class="pricing">
+        <div class="plan"> Basic </div>
+        <div class="plan"> Standard </div>
+        <div class="plan"> Premium </div>
+    </div>
+    <div class=" sidebar"> Sidebar </div>
+    <div class="content">Main Content </div>
+ </body>
+</html> 
